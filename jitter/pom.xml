@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>hipan-parent</artifactId>
+        <groupId>de.randymc.hipan</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jitter</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+
+    <dependencies>
+        <!-- External dependencies -->
+        <!-- slf4j bindings for logging -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.20</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.5</version>
+        </dependency>
+        <!-- Koloboke for high performance collections -->
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>koloboke-api-jdk8</artifactId>
+            <version>0.6.8</version>
+        </dependency>
+        <dependency>
+            <groupId>net.openhft</groupId>
+            <artifactId>koloboke-impl-jdk8</artifactId>
+            <version>0.6.8</version>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- Google Guava for utility -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>de.randymc.hipan</groupId>
+            <artifactId>hipan-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>
